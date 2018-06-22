@@ -5,7 +5,7 @@ Read more about Vidyo.io and ReactJS integration at - https://vidyo.io/how-to/
 
 # Clone Repository
 
-`git clone`
+`git clone https://github.com/Vidyo/VidyoConnector-reactjs.git`
 
 # To run this sample you just need to follow next steps:
 
