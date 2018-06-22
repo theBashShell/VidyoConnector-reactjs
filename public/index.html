@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png">
+    <title>Vidyo.io ReactJS Sample App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/javascript">
+        function onVidyoClientLoaded(status) {
+            switch (status.state) {
+                case "READY":             // The library is operating normally
+                    window.VC = new window.VidyoClientLib.VidyoClient('', () => {
+                        //
+                    });
+                    let event = new CustomEvent('vidyoclient:ready', {detail: VC});
+                    document.dispatchEvent(event);
+                    break;
+                case "RETRYING":          // The library operating is temporarily paused
+                    break;
+                case "FAILED":            // The library operating has stopped
+                    break;
+                case "FAILEDVERSION":     // The library operating has stopped
+                    break;
+                case "NOTAVAILABLE":      // The library is not available
+                    break;
+            }
+            return true;                  // Return true to reload the plugins if not available
+        }
+    </script>
+  </body>
+</html>
