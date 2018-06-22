@@ -5,17 +5,17 @@ Read more about Vidyo.io and ReactJS integration at - https://vidyo.io/how-to/
 
 # Clone Repository
 
-* git clone
+`git clone`
 
 # To run this sample you just need to follow next steps:
 
 1. Make sure you have a recent version of Node.js installed (you need version 6 or higher ).
 2. Install all dependencies.
  
-* npm install
+`npm install`
  
-3. To run sample app locally.
+3. To run locally.
  
-* npm start
+`npm start`
 
 The app will be running on https://localhost:3000.
