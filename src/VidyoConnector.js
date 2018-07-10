@@ -68,8 +68,8 @@ class VidyoConnector extends Component {
     // handleAdvancedSettingsChange(vidyoConnector);
     this.handleParticipantChange();
     this.handleSharing();
-    this.setState({ buttonsAvailable: true });
-    this.setState({ connectionStatus: 'Ready to connect' });
+    this.setState({ buttonsAvailable: true,
+                    connectionStatus: 'Ready to connect' });
   }
 
   registerDeviceListeners() {
@@ -135,9 +135,7 @@ class VidyoConnector extends Component {
         // RegisterLocalSpeakerEventListener Failed
     });
     
-    this.setState({ cameras });
-    this.setState({ microphones });
-    this.setState({ speakers });
+    this.setState({ cameras, microphones, speakers });
   }
 
   handleParticipantChange() {
@@ -172,8 +170,8 @@ class VidyoConnector extends Component {
 
   connectToConference() {
     let connectorDisconnected = (connectionStatus) => {
-        this.setState({ joinLeaveButtonState: true });
-        this.setState({ connectionStatus });
+        this.setState({ joinLeaveButtonState: true,
+                        connectionStatus });
     }
     this.vidyoConnector.Connect({
         
@@ -183,8 +181,8 @@ class VidyoConnector extends Component {
         resourceId:   this.state.resourceId,
         
         onSuccess:      () => {
-                            this.setState({ connectionStatus:   "Connected" });
-                            this.setState({ entranceFormHidden: true        });
+                            this.setState({ connectionStatus:   "Connected",
+                                            entranceFormHidden: true        });
                         },
         onFailure:      (reason) => {
                             this.setState({ entranceFormHidden: false       });
@@ -218,11 +216,11 @@ class VidyoConnector extends Component {
                         },
         onSelected:     (localWindowShare) => {
                             if (localWindowShare) {
-                                this.setState({ isSharing: true });
-                                this.setState({ screenShareButtonState: false });
+                                this.setState({ isSharing: true,
+                                                screenShareButtonState: false });
                             } else {
-                                this.setState({ isSharing: false });
-                                this.setState({ screenShareButtonState: true });
+                                this.setState({ isSharing: false,
+                                                screenShareButtonState: true });
                             }
                         },
         onStateUpdated: (localWindowShare, state) => {
