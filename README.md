@@ -16,7 +16,8 @@ Read more about Vidyo.io and ReactJS integration at - https://vidyo.io/how-to/
  
 3. To run locally.
  
- `npm run-macos`
- `npm run-windows`
+ `npm run macos`
+
+ `npm run windows`
 
 The app will be running on https://localhost:3000.
