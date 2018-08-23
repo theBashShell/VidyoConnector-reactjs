@@ -8,7 +8,7 @@ const host              = getUrlParameterByName("host", "prod.vidyo.io");
 const token             = getUrlParameterByName("token");
 const resourceId        = getUrlParameterByName("resourceId", "demoRoom");
 const displayName       = getUrlParameterByName("displayName", "Guest");
-const useNativeWebRTC   = getUrlParameterByName("useNativeWebRTC", false);
+const useNativeWebRTC   = getUrlParameterByName("useNativeWebRTC", true);
 
 loadRemoteVidyoClientLib(useNativeWebRTC, false);
 
