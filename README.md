@@ -1,4 +1,6 @@
 # Multiparty Video Chat Application using ReactJS and Vidyo.io
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FtheBashShell%2FVidyoConnector-reactjs.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FtheBashShell%2FVidyoConnector-reactjs?ref=badge_shield)
+
 
 This sample app showing how to create a video chat web application using Vidyo.io and ReactJS libraries.
 Read more about Vidyo.io and ReactJS integration at - https://vidyo.io/how-to/
@@ -21,3 +23,7 @@ Read more about Vidyo.io and ReactJS integration at - https://vidyo.io/how-to/
  `npm run windows`
 
 The app will be running on https://localhost:3000.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FtheBashShell%2FVidyoConnector-reactjs.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FtheBashShell%2FVidyoConnector-reactjs?ref=badge_large)
